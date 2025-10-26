@@ -59,18 +59,6 @@ async function generateCards() {
         card = makeCard(cardData.id, cardData.name, cardData.tags, cardData.short_desc, cardData.version)
         featuredDiv.appendChild(card)
     }
-
-    let sorted_by_downloads = data.sort(function (a, b) {
-
-        if (a.downloads > b.downloads) {return 1}
-        else if (a.downloads < b.downloads) {return -1}
-        else {return 0}
-
-    }).slice(0, 4).reverse()
-    for (const cardData of sorted_by_downloads) {
-        card = makeCard(cardData.id, cardData.name, cardData.tags, cardData.short_desc, cardData.version)
-        downloadsDiv.appendChild(card)
-    }
 }
 
 generateCards()
