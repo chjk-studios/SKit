@@ -1,0 +1,29 @@
+header p {
+  font-size: medium;
+}
+
+footer {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  color: var(--text-light);
+  transition: all 0.5s ease-in-out;
+  bottom: 0px;
+  background: var(--bg-dark);
+  transition: .4s ease-in-out;
+  border-top: 2px solid var(--accent-green);
+  background: var(--bg-dark);
+  color: var(--fg-damp-white);
+}
+
+footer h1 {
+  align-items: center;
+  color: var(--bg-black);
+  margin: 1rem 1rem 1rem 2rem;
+  font-size: 4rem;
+}
+
+footer p {
+  margin: 0;
+}

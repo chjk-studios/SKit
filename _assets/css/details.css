@@ -1,0 +1,71 @@
+.skript-details {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0.2rem 2rem;
+    width: calc(100vw - 200px);
+}
+
+.skript-details span {
+    width: 20rem;
+    text-align: center;
+}
+
+.center-left {
+    text-align: left;
+}
+.center-right {
+    text-align: right;
+}
+
+.skript-desc {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0.2rem 2rem;
+    width: calc(100vw - 200px);
+}
+
+.skript-infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skript-details a {
+    all: unset;
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--bg-light);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skript-details a:hover {
+    background-color: var(--bg-light);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--green);
+}
+
+.skript-details a:active {
+    background-color: var(--bg-dark);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--green-dark);
+}
+
+.skript-infos h2 {
+    margin: 16px 0 0 0;
+}

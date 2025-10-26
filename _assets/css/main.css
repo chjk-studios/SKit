@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-black);
+  color: var(--fg-damp-white);
+  height: 100%;
+  margin: 0;
+}

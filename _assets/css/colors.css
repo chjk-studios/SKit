@@ -1,0 +1,86 @@
+:root {
+  /* Accent Colors */
+  --accent-green: #2ecc70;
+  --accent-dark-green: #1c8247;
+  --accent-blue: hsl(217, 91%, 60%);
+  --accent-dark-blue: hsl(217, 63%, 41%);
+
+  /* Extra colors: Light */
+  --blue-light: #5baeff;
+  --green-blue-light: #4fd3dc;
+  --green-light: #5fd98a;
+  --orange-light: #ff9f5e;
+  --purple-light: #b07adf;
+  --red-light: #f76c6c;
+  --yellow-light: #ffe04b;
+
+  /* Extra colors: Regular */
+  --blue: #3c83f6;
+  --green-blue: #17c3ce;
+  --green: #2ecc70;
+  --orange: #ec7429;
+  --purple: #9e3ac5;
+  --red: #ff2739;
+  --yellow: #f1c40f;
+
+  /* Extra colors: Dark */
+  --blue-dark: #2759aa;
+  --green-blue-dark: #11737c;
+  --green-dark: #1c8247;
+  --orange-dark: #cc6a25;
+  --purple-dark: #6d3793;
+  --red-dark: #a7282d;
+  --yellow-dark: #b38e00;
+
+  /* BG Colors */
+  --bg-black: #0d0d0d;
+  --bg-dark: #1a1a1a;
+  --bg-light: #333333;
+
+  /* FG Colors */
+  --fg-white: #f2f2f2;
+  --fg-damp-white: #bfbfbf;
+
+  /* TXT Colors */
+  --txt-white: var(--fg-white);
+  --txt-link: var(var(--blue-light))
+}
+
+/* Used as classes in span tags for colored text */
+.col-green {
+  color: var(--green);
+}
+
+/* same, but with glow */
+.glow-green {
+  transition: .6s text-shadow;
+}
+.glow-green:hover {
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+.tag-yellow {
+  background-color: rgba(223, 209, 13, 0.300);
+  color: var(--yellow);
+}
+
+.tag-red {
+  background-color: rgba(255, 39, 57, 0.300);
+  color: var(--red);
+}
+
+.tag-blue {
+  background-color: rgba(39, 115, 255, 0.3);
+  color: var(--blue);
+}
+
+.tag-green {
+  background-color: rgba(39, 255, 136, 0.3);
+  color: var(--green);
+}
+
+.tag-undefined {
+  background-color: rgba(131, 131, 131, 0.3);
+  color: var(--gray);
+  text-decoration: line-through;
+}

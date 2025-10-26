@@ -1,0 +1,9 @@
+.code {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
