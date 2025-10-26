@@ -9,7 +9,7 @@
     border-radius: 10px;
     padding: 0.2rem 2rem;
     width: calc(100vw - 200px);
-    background-color: ;
+    background-color: var(--bg-dark);
 }
 
 .skript-details span {
@@ -33,6 +33,7 @@
     border-radius: 10px;
     padding: 0.2rem 2rem;
     width: calc(100vw - 200px);
+    background-color: var(--bg-dark);
 }
 
 .skript-infos {
