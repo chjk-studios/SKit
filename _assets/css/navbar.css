@@ -38,7 +38,7 @@ nav {
   padding: 0.2rem 2rem;
   border-radius: 10px;
   color: var(--text-light);
-  background: rgba(26, 26, 26, 0.5);
+  background: var(--bg-dark);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.4s ease-in-out;
 }
