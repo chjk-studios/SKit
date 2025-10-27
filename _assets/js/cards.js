@@ -47,7 +47,7 @@ function makeCard(id, name, tags, short_desc, ver) {
 async function generateCards() {
     const data = await getSkriptData()
 
-    let sorted_by_creation = data.sort().slice(0, 4).reverse()
+    let sorted_by_creation = data.sort().slice(0, 8).reverse()
     let card = null
     for (const cardData of sorted_by_creation) {
         card = makeCard(cardData.id, cardData.name, cardData.tags, cardData.short_desc, cardData.version)
