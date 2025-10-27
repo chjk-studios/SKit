@@ -3,7 +3,8 @@ const tagColors = {
     "Test": "red",
     "Moderation": "blue",
     "QOL": "green",
-    "Chat": "gray"
+    "Chat": "gray",
+    "GUI": "darkgreen"
 }
 
 const SkriptsDBEndpoint = "https://appwrite.chjk.xyz/v1/tablesdb/68fe3c6d00024f7f7674/tables/skripts"
