@@ -21,6 +21,7 @@
 .card-title p, .card-title h2 {
   padding: 0;
   text-align: left;
+  width: 40vw;
 }
 
 .grid {
