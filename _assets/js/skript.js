@@ -30,6 +30,7 @@ function updateDetails(data) {
     document.getElementById("details-created").innerText = createdDate.toLocaleString(undefined, options);
 
     document.getElementById("details-name").innerText = data.name
+    document.getElementById("details-author").innerText = "By " + data.author
     document.getElementById("details-version").innerText = data.version
     document.getElementById("details-downloadbutton").href = data.dlink
 

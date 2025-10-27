@@ -34,7 +34,8 @@ function parseData(data) {
         downloads: row.Download_Count,
         public: row.Public,
         version: row.Version,
-        dlink: row.Download
+        dlink: row.Download,
+        author: row.Author
     }));
 }
 
