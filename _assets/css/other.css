@@ -5,9 +5,10 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-a:hover {
+a:hover:not(:has(.card)) {
   color: var(--accent-green);
 }
+
 
 hr {
   width: 65%;
