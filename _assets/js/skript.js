@@ -11,9 +11,8 @@ const descField = document.getElementById("desc");
 
 let skriptData = null;
 
-getSingleSkriptData().then(data => {
-    console.log(skriptData)
-    updateDetails(skriptData)
+getSingleSkriptData(SkriptID).then(data => {
+    updateDetails(data)
 });
 
 function updateDetails(data) {
@@ -40,7 +39,6 @@ function updateDetails(data) {
 
         const descMd2Html = marked.parse(data.desc);
         descField.innerHTML = descMd2Html;
-        console.log(data.id);
     } else {
         document.getElementById("details-created").innerText = "Not Found!";
 
@@ -49,7 +47,6 @@ function updateDetails(data) {
         document.getElementById("details-version").innerText = "Not Found!";
         descField.innerHTML = "<h3>The Skript You tried to Find was not found in the SKit database!</h3>";
         document.getElementById("details-downloadbutton").href = "/404.html";
-        console.log(data.id);
     }
     
 }

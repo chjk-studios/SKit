@@ -49,7 +49,7 @@ async function fetchRow(id) {
 }
 
 function parseRow(row) {
-    return {
+    data = {
         name: row.Name,
         short_desc: row.Short_Desc,
         desc: row.Desc,
@@ -62,6 +62,7 @@ function parseRow(row) {
         dlink: row.Download,
         author: row.Author
     };
+    return data
 }
 
 function parseData(data) {
