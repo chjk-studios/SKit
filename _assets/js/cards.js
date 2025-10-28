@@ -27,7 +27,7 @@ function makeCard(id, name, tags, short_desc, ver) {
     card_head_div.appendChild(card_title_div)
 
     let card_title_text = document.createElement("h2")
-    card_title_text.innerHTML = name + '<span id="version">' + ver + '</span>'
+    card_title_text.innerHTML = name + '<span id="version-plain">' + ver + '</span>'
     card_title_div.appendChild(card_title_text)
 
     for (let tag of tags) {
