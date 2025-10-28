@@ -20,7 +20,7 @@ getSkriptData().then(data => {
 function updateDetails(data) {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    if (id) {
+    if (id && id == data.id) {
         const createdDate = new Date(data.created);
         const options = {
             year: 'numeric',
@@ -48,7 +48,7 @@ function updateDetails(data) {
         document.getElementById("details-name").innerText = "Not Found!";
         document.getElementById("details-author").innerText = "Not Found!";
         document.getElementById("details-version").innerText = "Not Found!";
-        descField.innerHTML = "<h3>The Skript You tried to Find was not found in the database of SKit!</h3>";
+        descField.innerHTML = "<h3>The Skript You tried to Find was not found in the SKit database!</h3>";
         document.getElementById("details-downloadbutton").href = "/404.html";
         console.log(data.id);
     }

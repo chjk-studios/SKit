@@ -23,8 +23,8 @@ async function fetchData() {
     }
 }
 
-function parseData(data) {
-    return data.rows.map(row => ({
+function parseRow(row) {
+    return {
         name: row.Name,
         short_desc: row.Short_Desc,
         desc: row.Desc,
@@ -36,7 +36,11 @@ function parseData(data) {
         version: row.Version,
         dlink: row.Download,
         author: row.Author
-    }));
+    };
+}
+
+function parseData(data) {
+    return data.rows.map(parseRow);
 }
 
 async function getSkriptData() {
