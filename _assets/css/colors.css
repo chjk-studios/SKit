@@ -43,7 +43,7 @@
 
   /* TXT Colors */
   --txt-white: var(--fg-white);
-  --txt-link: var(var(--blue-light))
+  --txt-link: var(--fg-white);
 }
 
 /* Used as classes in span tags for colored text */
