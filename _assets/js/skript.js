@@ -11,8 +11,7 @@ const descField = document.getElementById("desc");
 
 let skriptData = null;
 
-getSkriptData().then(data => {
-    skriptData = data.filter(item => item.id === SkriptID)[0]
+getSingleSkriptData().then(data => {
     console.log(skriptData)
     updateDetails(skriptData)
 });
