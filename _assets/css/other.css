@@ -87,11 +87,11 @@ header p {
 
 
 @keyframes version {
-    0%   { color: #ff4b5c; } 
-    25%  { color: #ffcd3c; }  
+    0%   { color: #8a4bff; } 
+    25%  { color: #3c49ff; }  
     50%  { color: #4cd3c2; }
-    75%  { color: #3e64ff; }
-    100% { color: #ff4b5c; }
+    75%  { color: #3c49ff; }
+    100% { color: #8a4bff; }
   }
 
 button {
@@ -114,4 +114,14 @@ button:active {
   background-color: var(--bg-dark);
   color: var(--green-dark);
 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

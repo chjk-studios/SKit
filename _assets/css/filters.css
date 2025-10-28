@@ -1,16 +1,22 @@
 .filter {
   padding: 1px 3px;
+  padding-top: 3px;
   border: 2px solid;
   border-radius: 5px;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
   cursor: pointer;
+  filter: brightness(.6);
+  text-align: middle;
+}
+
+.filter-active {
+  filter: brightness(1.4);
 }
 
 #all-title {
   margin-bottom: 0;
 }
-
 
 .filters {
   display: flex;
