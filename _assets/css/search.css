@@ -1,11 +1,24 @@
-.search-bar {
+.search {
     display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: row;
     align-items: center;
     margin: 10px;
     border-radius: 10px;
     padding: 0.2rem 2rem;
-    width: calc(100vw - 200px);
+
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 0.6rem 0.35rem;
     background-color: var(--bg-dark);
+    height: 28px;
+    width: calc(100vw - 160px);
+    color: var(--fg-white);
+    outline: none;
 }
