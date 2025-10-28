@@ -1,6 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const type = params.get('type');
 const allDiv = document.getElementById("all-skripts");
+const filterContainer = document.getElementById("filter-container")
 
 const allTitle = document.getElementById('all-title');
 
@@ -20,4 +21,14 @@ async function generateAllCards() {
     }
 }
 
+function generateTagFilters() {
+    for (const [key, value] of Object.entries(tagColors)) {
+        const tagSpan = document.createElement("span");
+        tagSpan.classList.add("filter", "tag-" + value);
+        tagSpan.innerText = key;
+        filterContainer.appendChild(tagSpan);
+    }
+}
+
+generateTagFilters()
 generateAllCards()

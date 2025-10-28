@@ -1,16 +1,21 @@
 .filter {
-  font-size: .7rem;
   padding: 1px 3px;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 5px;
-  margin-right: .25rem
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  cursor: pointer;
+}
+
+#all-title {
+  margin-bottom: 0;
+}
+
+.filter-title {
+  margin-top: 0;
 }
 
 .filters {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
