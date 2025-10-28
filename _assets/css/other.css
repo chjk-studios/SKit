@@ -66,8 +66,9 @@ header p {
 }
 
 .logo {
-  width: 50px;
-  padding: 0;
+  width: 40px;
+  padding-top: 5px;
+  padding-bottom: 2px;
   margin: 0;
 }
 
