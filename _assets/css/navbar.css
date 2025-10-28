@@ -30,6 +30,11 @@
   }
 }
 
+.nav-sticky {
+  position: sticky;
+  top: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
