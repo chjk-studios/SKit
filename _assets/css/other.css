@@ -125,3 +125,10 @@ button:active {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+.front-logo-img {
+  width: 55px;
+  padding: 0;
+  margin: 0;
+  align-items: middle;
+}
