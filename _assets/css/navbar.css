@@ -43,9 +43,11 @@ nav {
   padding: 0.2rem 2rem;
   border-radius: 10px;
   color: var(--text-light);
-  background: var(--bg-dark);
+  background: rgba(26, 26, 26, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.4s ease-in-out;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .navbarlogo {
